@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>stars</title>
+
+	<style type="text/css">
+		
+	#star{
+height: 100px;
+width: 100px;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+
+	}
+
+
+	</style>
+</head>
+<body>
+
+<div id="star"></div>
+
+
+
+<script type="text/javascript">
+	
+document.addEventListener("click", function makeStar(event){
+
+console.log(event.clientX, event.clientY);
+
+star.style.left = event.clientX - 50 + "px";
+star.style.top = event.clientY - 50 + "px";
+
+})
+
+
+
+</script>
+</body>
+</html>
