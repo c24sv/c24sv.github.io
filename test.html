@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Test Project</title>
+
+	<style type="text/css">
+		
+		#box{
+
+			height: 100px;
+			width: 100px;
+			background-color: forestgreen;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="box"></div>
+
+	<script type="text/javascript">
+		
+		document.addEventListener("click", function (event){
+
+			console.log(event.clientX, event.clientY)
+			
+			box.style.left = event.clientX - 50 + "px"
+			box.style.top = event.clientY - 50 + "px"
+		})
+
+	</script>
+
+</body>
+</html>
