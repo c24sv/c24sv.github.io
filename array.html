@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		body{
+
+			background-color: green;
+
+		}
+
+		#picture{
+
+			background-origin: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Christmas_tree.svg/1607px-Christmas_tree.svg.png);
+			height: 300px;
+			width: 200px;
+
+		}
+
+		
+		#whatever{
+			font-size: 100px;
+			color: red;
+
+		}
+	</style>
+	
+	<title>Array</title>
+</head>
+<body>
+
+	<div id="picture"></div>
+
+	
+
+	<center><div id="whatever"></div></center>
+
+	<script type="text/javascript">
+
+		document.addEventListener("click", function(){
+
+		let myNames = ["Stephen", "Frank", "Rosemary", "Jack", "Bleu", "Kate"];
+		 let number = Math.floor(Math.random() * 6)
+
+		let names = myNames[number];
+		
+
+		console.log(names); // ["Stephen", "Frank", "Rosemary", "Jack"]
+
+		whatever.innerText = names;
+
+	})
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
