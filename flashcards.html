@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Flashcards</title>
+
+	<style type="text/css">
+		
+		.breakfast{
+
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			display: inline-block;
+			margin: 3px;
+			background-image: url(https://auxmerveilleux.com/berlin/440/croissant.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeCroissant (placeholder){
+		var croissant = document.createElement("div");
+
+		document.body.appendChild(croissant);
+
+		croissant.classList.add("breakfast");
+		croissant.innerText =placeholder;
+
+		croissant.addEventListener("click", function(){
+			croissant.style.backgroundImage="url(https://t3.ftcdn.net/jpg/03/30/86/32/360_F_330863226_T8yJLkBpNVn1emlD4Q9G25KaM4y0FK1Y.jpg)"
+			
+
+		})
+
+	}
+
+for(var i=1; i<1000;i=i+1)	{makeCroissant(i)}
+
+
+	</script>
+
+</body>
+</html>
