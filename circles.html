@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Make multiple circles/objects -->
+	
+	<title>Circles</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "105px";
+            square.style.height = "105px";
+            square.style.display = "inline-block";
+            square.style.margin = "5px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "red";
+            square.classList.add("box");
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;};
+
+    for (var i = 0; i < 23; i=i+1) 
+    { makeSquare(i);}
+
+{var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "105px";
+            square.style.height = "105px";
+            square.style.display = "inline-block";
+            square.style.margin = "5px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "green";
+            square.classList.add("box");
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;};
+
+    for (var i = 0; i < 23; i=i+1) 
+    { makeSquare(i=0);}
+
+</script>
+</body>
+</html>
