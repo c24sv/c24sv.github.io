@@ -57,5 +57,10 @@
 	For this peoject I made a truck that moved left, right, up and down, corresponding to which arrow keys were pressed. Originally Molly helped us make it go right, but she did not disclose, and left it to us to figure out the rest. The first thing I did was program it to go left. To do that, I was able to keep everything relatively the same, except instead of adding 20px to the left position, I subtracted 20px from the left position and this made it go left. I then used this same code for the up and down except changed it from the left position to the top position. This kind of worked, except when I would switch from left and right to up and down, the truck would oddly reset at a position towards the center. After a few minutes of troubleshooting, I realized that I used the same variables from the left and right and the up and down. This made it so when I changed, it would start the up and down from where the left and right ended. For example, if I moved the truck to a positon (100px, 0px), where the top left corner of the screen is (0px, 0px) and the x value is right and the y value is left, when I would move the truck to this positon and then use the up and down arrows, it would start moving up and down at the position (100px, 100px). To fix this problem, I just changed the up and down variable to y so that I had two different variables.
 </p>
 
+<h2>Journal Entry 11 (Circle's Section):</h2>
+<p>
+For this project I had to make a project that incorporated one part of the circle's project that Molly had showed us in class. Thus I chose to make a project where a div followed my mouse wherever I moved it. I did this by creating a div which was just a 100px blue square. I then made an event listener where the console tracked my client x and y and moved the object accordingly to the x and y position of where my mouse was on the screen.
+</p>
+
 </body>
 </html>
